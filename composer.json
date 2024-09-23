@@ -1,0 +1,14 @@
+{
+    "name": "integration-helpers/integration-master",
+    "description": "Integration Helper with Version Laravel",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "IntegrationHelpers\\IntegrationMaster\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
