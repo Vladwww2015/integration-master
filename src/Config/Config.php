@@ -16,7 +16,7 @@ class Config
         protected IntegrationMasterExclusionHandlerInterface $integrationMasterExclusionHandler,
     ) {
         if(!in_array(IntegrationMasterInterface::class, class_implements($integrationMasterModel))) {
-            throw new \Exclusion(
+            throw new \Exception(
                 sprintf(
                     'Class: %s must to implement interface: %s',
                     $integrationMasterModel,
@@ -26,7 +26,7 @@ class Config
         }
 
         if(!in_array(IntegrationMasterExclusionInterface::class, class_implements($integrationMasterExclusionModel))) {
-            throw new \Exclusion(
+            throw new \Exception(
                 sprintf(
                     'Class: %s must to implement interface: %s',
                     $integrationMasterExclusionModel,
